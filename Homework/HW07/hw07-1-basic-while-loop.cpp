@@ -30,3 +30,24 @@
         [7] Hello World
 
 */
+#include <stdio.h>
+
+int main() {
+    int num;
+    
+    printf("กรอกจำนวนตัวเลข: ");
+    scanf("%d", &num);
+    
+    int i = 1;
+    while (i <= num) {
+        if (num % 2 == 0) {
+            printf("(%d) Hello World\n", i);
+        } else {
+            printf("[%d] Hello World\n", i);
+        }
+        
+        i++;
+    }
+    
+    return 0;
+}
